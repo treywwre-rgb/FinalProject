@@ -5,25 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section id="landing">
         <nav>
             <div class="row nav__row">
             <div class="nav__logo">
-                <img class="logo" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
+                <img class="nav__logo--img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO">
+                <div class="nav__logo--title">Treact</div>
                 </div>
-                <ul class="nav__links">
-                    <li><a href="#" class="nav__link">About</a></li>
-                    <li><a href="#" class="nav__link">Blog</a></li>
-                    <li><a href="#" class="nav__link">Pricing</a></li>
-                    <li><a href="#" class="nav__link">Contact us</a></li>
-                    <li><a href="#" class="nav__link">Login</a></li>
-                    <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
-                </ul>
+                <div class="nav__links">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Pricing</a>
+                    <a href="#" class="nav__link">Contact us</a>
+                    <a href="#" class="nav__link login">Login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+                </div>
+                <button class="btn_menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </nav>
+        <div class="menu">
+            <button class="btn__menu--close" onclick="closeMenu()">
+                <svg xm1ns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="menu__links">
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#contact" class="menu__link" onclick="closeMenu()">Contact Us  
+                </a>
+                <a href="#" class="menu__link login" onclick="closeMenu()">Login</a>
+                <a href="#" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__description">
+                        <h1>
+                             Beautiful React Templates 
+                            <span class="purple">for you</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
     </section>
     
 </body>
