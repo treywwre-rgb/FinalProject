@@ -285,7 +285,7 @@ h1 {
     align-items: center;
 }
 
-.header__email--imput {
+.header__email--input {
     width: 100%;
     border-radius: 500px;
     border: 2px solid rgb(229, 231, 235);
@@ -347,11 +347,71 @@ input {
     -webkit-rtl-ordering: logical;
     background-color: field;
     margin: 0em 0em 0em 0em;
-    padding: 1px 0px;
+    padding: 10px 0px;
     border-width: 2px;
     border-style: inset;
     border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
     padding-block: 1px;
     padding-inline: 2px;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    font-language-override: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em 0em 0em 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
 }
