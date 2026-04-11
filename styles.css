@@ -352,9 +352,12 @@ FEATURES
   max-width: 1024px;
   margin: 0 auto;
 }
-
-.section__tag {
+#features .section__tag,
+#features .section__title,
+#features .section__para {
   text-align: center;
+}
+.section__tag {
   font-size: 16px;
   color: #6415ff;
   letter-spacing: 1.6px;
@@ -373,7 +376,6 @@ h4 {
 }
 
 .section__title {
-  text-align: center;
   font-size: 48px;
   font-weight: 900;
   color: rgb(36, 62, 99);
@@ -393,7 +395,6 @@ h2 {
 }
 
 .section__para {
-  text-align: center;
   font-size: 18px;
   font-weight: 500;
   color: #7c8ba1;
@@ -522,4 +523,100 @@ QUALITY
 svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: hidden;
+}
+
+/*
+
+STEPS
+
+*/
+
+#steps .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps__description,
+.steps__img--wrapper {
+    width: 58%;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  position: relative;
+}
+
+.steps__img {
+  z-index: 2;
+}
+
+.steps__grid {
+  position: absolute;
+  bottom: 100px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 10rcm;
+  height: 10rcm;
+  opacity: 0.8;
+  z-index: -10;
+  color: rgb(100, 21, 255);
+  fill: currentColor;
+}
+
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+}
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
 }
