@@ -642,12 +642,12 @@ VALUES
   padding: 32px 64px 32px 0;
 }
 
-#valus .section__title {
+#values .section__title {
   margin-top: 16px;
   margin-bottom: 32px;
 }
 
-.value__list {
+.values__list {
   margin-left: 0px;
   margin-right: 0px;
   display: flex;
@@ -678,7 +678,28 @@ VALUES
   height: 36px;
 }
 
-value__img {
+.value__img {
   width: 20px;
   height: 20px;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #243e63;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #718096;
+}
+
+#values .btn {
+  margin-top: 48px;
 }
