@@ -863,10 +863,10 @@ PRICING
 
 .plans__blob {
   z-index: -10;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
-  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+  transform: translateX(-235%) translateY(-50%) scaleX(1) scaleY(1);
   height: 250px;
   width: 250px;
   opacity: 0.25;
