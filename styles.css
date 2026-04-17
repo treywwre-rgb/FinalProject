@@ -751,6 +751,7 @@ PRICING
 }
 
 .plans {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -895,7 +896,7 @@ PRICING
 
 .plans__blob {
   z-index: -10;
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   transform: translateX(-235%) translateY(-50%) scaleX(1) scaleY(1);
@@ -1439,7 +1440,7 @@ MEDIA
   }
 
   #quality .row,
-  #values .row, {
+  #values .row {
     flex-direction: column-reverse;
   }
 
